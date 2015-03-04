@@ -1,0 +1,22 @@
+# compiler Flags
+CC = gcc
+CFLAGS = -g -fsigned-char -std=gnu99 
+HX11 = -I/usr/X11R6/include
+LX11 = -L/usr/X11R6/lib -lX11
+lDL = -ldl 
+SHARED = -dynamiclib
+SONAME = -install_name 
+SO = so
+SNUM = -DNUM_LONG_LONG
+
+FC = gfortran-4.2 
+FFLAGS = 
+RANLIB = ranlib -c
+lFort = -L/sw/lib  -lgfortran
+CXX=g++    
+CXXFLAGS = -g 
+CALCHEP = /Users/ytang/Programs/micromegas_4.1.7/CalcHEP_src
+UNAME = Darwin
+export CC CFLAGS  lDL LX11 SHARED SONAME SO FC FFLAGS RANLIB CXX CXXFLAGS lFort
+
+
